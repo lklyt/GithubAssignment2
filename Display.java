@@ -26,4 +26,21 @@ public class Display {
         }
 
     }
+
+    public static int oddsum (int[] x){
+    int oddsum =0;
+    for (int i=0; i<x.length; i+2){
+        oddsum += x[i]
+    }
+    System.out.println ("The sum of elements in the odd numbered indexes are: " + oddsum)
+}
+
+public static int evensum (int []){
+    int evensum =0;
+    for (int i=1; i<x.length; i+2){
+        evensum += x[i]
+    }
+    System.out.println ("The sum of elements in the even numbered indexes are: " + evensum)
+
+}
 }
