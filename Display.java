@@ -3,6 +3,27 @@ import java.util.Scanner;
 
 public class Display {
 
+
+    public static  int[] averageDiff(int[] nums){
+
+        int sum = 0;
+        int count = 0;
+
+        for (int i= 0; i< nums.length; i++) {
+            sum+= nums[i];
+            count++;
+        }
+
+        int average = sum/count;
+
+        for (int i= 0; i< nums.length; i++) {
+            nums[i] = nums[i] - average;
+        }
+
+        return nums;
+    }
+
+
     public static void main(String[] args) {
         Random rng = new Random();
 
