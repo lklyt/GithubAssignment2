@@ -95,7 +95,6 @@ public class Display {
         for (int i = 0; i < x.length; i = i + 2) {
             oddsum += x[i];
         }
-        System.out.println("The sum of elements in the odd numbered indexes are: " + oddsum);
         return oddsum;
     }
 
