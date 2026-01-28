@@ -47,4 +47,42 @@ public class Display {
         }
 
     }
+
+    public static int max(int[] nums) {
+        int max = -100000;
+        for (int i : nums) {
+            if (i > max) {
+                max = i;
+            }
+        }
+        return max;
+    }
+
+    public static int min(int[] nums) {
+        int min = 100000;
+        for (int i : nums) {
+            if (i < min) {
+                min = i;
+            }
+        }
+        return min;
+    }
+
+    public static int oddsum(int[] x) {
+        int oddsum = 0;
+        for (int i = 0; i < x.length; i = i + 2) {
+            oddsum += x[i];
+        }
+        System.out.println("The sum of elements in the odd numbered indexes are: " + oddsum);
+        return oddsum;
+    }
+
+    public static int evensum(int[] x) {
+        int evensum = 0;
+        for (int i = 1; i < x.length; i = i + 2) {
+            evensum += x[i];
+        }
+        return evensum;
+
+    }
 }
