@@ -3,6 +3,27 @@ import java.util.Scanner;
 
 public class Display {
 
+
+    public static  int[] averageDiff(int[] nums){
+
+        int sum = 0;
+        int count = 0;
+
+        for (int i= 0; i< nums.length; i++) {
+            sum+= nums[i];
+            count++;
+        }
+
+        int average = sum/count;
+
+        for (int i= 0; i< nums.length; i++) {
+            nums[i] = nums[i] - average;
+        }
+
+        return nums;
+    }
+
+
     public static void main(String[] args) {
         Random rng = new Random();
 
@@ -27,7 +48,7 @@ public class Display {
                 int max = max(array);
                 System.out.println("Maximum number: " + max);
             } else if (option == 3) {
-                int[] dif = averageDif(array);
+                int[] dif = averageDiff(array);
                 System.out.print("{");
                 for (int i = 0; i < arrSize; i++) {
                     if (i != arrSize - 1) {
@@ -68,7 +89,7 @@ public class Display {
         return min;
     }
 
-    public static int oddsum(int[] x) {
+    public static int oddSum(int[] x) {
         int oddsum = 0;
         for (int i = 0; i < x.length; i = i + 2) {
             oddsum += x[i];
@@ -77,7 +98,7 @@ public class Display {
         return oddsum;
     }
 
-    public static int evensum(int[] x) {
+    public static int evenSum(int[] x) {
         int evensum = 0;
         for (int i = 1; i < x.length; i = i + 2) {
             evensum += x[i];
