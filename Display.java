@@ -35,7 +35,7 @@ public class Display {
     System.out.println ("The sum of elements in the odd numbered indexes are: " + oddsum)
 }
 
-public static int evensum (int []){
+public static int evensum (int [] x){
     int evensum =0;
     for (int i=1; i<x.length; i+2){
         evensum += x[i]
