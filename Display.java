@@ -39,7 +39,7 @@ public class Display {
 
         while (option != 6) {
             System.out.print(
-                    "1- Find Minimum \n2- Find Maximum \n3- Elements Differance From Average \n4- Sum With Odd Index \n5-Sum With Even Index \n6- Exit \nChoose an option: ");
+                    "1- Find Minimum \n2- Find Maximum \n3- Elements Differance From Average \n4- Sum With Odd Index \n5- Sum With Even Index \n6- Exit \nChoose an option: ");
             option = scn.nextInt();
             if (option == 1) {
                 int min = min(array);
@@ -48,6 +48,7 @@ public class Display {
                 int max = max(array);
                 System.out.println("Maximum number: " + max);
             } else if (option == 3) {
+                System.out.print("The diffrences from the average: ");
                 int[] dif = averageDiff(array);
                 System.out.print("{");
                 for (int i = 0; i < arrSize; i++) {
