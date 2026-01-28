@@ -33,6 +33,26 @@ public class Display {
         oddsum += x[i]
     }
     System.out.println ("The sum of elements in the odd numbered indexes are: " + oddsum)
+
+    public static int max(int[] nums) {
+        int max = -100000;
+        for (int i : nums) {
+            if(i > max){
+                max = i;
+            } 
+        }
+        return max;
+    }
+
+        public static int min(int[] nums) {
+        int min = 100000;
+        for (int i : nums) {
+            if(i < min){
+                min = i;
+            } 
+        }
+        return min;
+    }
 }
 
 public static int evensum (int [] x){
