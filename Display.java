@@ -3,26 +3,24 @@ import java.util.Scanner;
 
 public class Display {
 
-
-    public static  int[] averageDiff(int[] nums){
+    public static int[] averageDiff(int[] nums) {
 
         int sum = 0;
         int count = 0;
 
-        for (int i= 0; i< nums.length; i++) {
-            sum+= nums[i];
+        for (int i = 0; i < nums.length; i++) {
+            sum += nums[i];
             count++;
         }
 
-        int average = sum/count;
+        int average = sum / count;
 
-        for (int i= 0; i< nums.length; i++) {
+        for (int i = 0; i < nums.length; i++) {
             nums[i] = nums[i] - average;
         }
 
         return nums;
     }
-
 
     public static void main(String[] args) {
         Random rng = new Random();
@@ -72,7 +70,7 @@ public class Display {
     }
 
     public static int max(int[] nums) {
-        int max = -100000;
+        int max = nums[0];
         for (int i : nums) {
             if (i > max) {
                 max = i;
@@ -82,7 +80,7 @@ public class Display {
     }
 
     public static int min(int[] nums) {
-        int min = 100000;
+        int min = nums[0];
         for (int i : nums) {
             if (i < min) {
                 min = i;
