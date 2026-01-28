@@ -37,7 +37,7 @@ public class Display {
 
         while (option != 6) {
             System.out.print(
-                    "1- Find Minimum \n2- Find Maximum \n3- Elements Differange From Average \n4- Sum With Odd Index \n5-Sum With Even Index \n6- Exit \nChoose an option: ");
+                    "1- Find Minimum \n2- Find Maximum \n3- Elements Differance From Average \n4- Sum With Odd Index \n5-Sum With Even Index \n6- Exit \nChoose an option: ");
             option = scn.nextInt();
             if (option == 1) {
                 int min = min(array);
@@ -49,8 +49,9 @@ public class Display {
                 int[] dif = averageDiff(array);
                 System.out.print("{");
                 for (int i = 0; i < arrSize; i++) {
+                    System.out.print(dif[i]);
                     if (i != arrSize - 1) {
-                        System.out.print(dif[i] + ", ");
+                        System.out.print( ", ");
                     }
                 }
                 System.out.println("}");
@@ -92,7 +93,6 @@ public class Display {
         for (int i = 0; i < x.length; i = i + 2) {
             oddsum += x[i];
         }
-        System.out.println("The sum of elements in the odd numbered indexes are: " + oddsum);
         return oddsum;
     }
 
