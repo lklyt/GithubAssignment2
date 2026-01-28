@@ -57,8 +57,8 @@ public class Display {
 
 public static int evensum (int [] x){
     int evensum =0;
-    for (int i=1; i<x.length; i+2){
-        evensum += x[i]
+    for (int i=1; i<x.length; i=i+2){
+        evensum += x[i];
     }
     System.out.println ("The sum of elements in the even numbered indexes are: " + evensum)
 
